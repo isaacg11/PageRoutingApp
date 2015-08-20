@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Routing101</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+<body id="body" class="container">
+	<div class="navbar navbar-default">
+		<span id="header">Routing App</span>
+		<br />
+		<a class="navbar-brand" href="https://angular11.firebaseio.com/"><u>Click to view Firebase files</u></a>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a ui-sref="page1"><strong>1</strong></a>
+			</li>
+			<li>
+				<a ui-sref="page2"><strong>2</strong></a>
+			</li>
+			<li>
+				<a ui-sref="page3"><strong>3</strong></a>
+			</li>
+			<li>
+				<a ui-sref="page4"><strong>4</strong></a>
+			</li>
+		</ul>
+	</div>
+	<ui-view></ui-view>
+	<script src="/angular/angular.js"></script>
+	<script src="/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="/javascript/app.js"></script>
+	<script src="/javascript/Controllers.js"></script>
+</body>
+</html>
